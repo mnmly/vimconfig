@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/mnmly/WebDev/sandbox/minimal-cube'
+let g:netrw_dirhist_2='/Users/mnmly/WebDev/sandbox'
+let g:netrw_dirhist_3='/Users/mnmly/WebDev/sandbox/height-auto-issue'
+let g:netrw_dirhist_4='/Users/mnmly'

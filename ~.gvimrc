@@ -1,0 +1,1 @@
+/Users/mnmly/.vim/gvimrc
