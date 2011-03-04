@@ -8,7 +8,7 @@ endif
 set number
 set cursorline
 set autoindent
-set linespace=1
+set linespace=3
 set nowrap
 
 
@@ -72,6 +72,11 @@ imap jj <esc>
 "Map ,is to => 
 autocmd FileType ruby iab @is =>
 
+"-------------------------------------------------
+" Auto-save
+"-------------------------------------------------
+set nobackup
+set noswapfile
 
 "-------------------------------------------------
 " Spellings

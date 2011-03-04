@@ -1,3 +1,18 @@
 [submodule "bundle/jasmine"]
 	path = bundle/jasmine
 	url = git://github.com/claco/jasmine.vim.git
+[submodule "bundle/command-t"]
+	path = bundle/command-t
+	url = https://github.com/wincent/Command-T.git
+[submodule "bundle/js-test-driver"]
+	path = bundle/js-test-driver
+	url = https://github.com/hujinpu/js-test-driver-vim-plugin.git
+[submodule "bundle/vim-coffee-script"]
+	path = bundle/vim-coffee-script
+	url = git://github.com/kchmck/vim-coffee-script.git
+[submodule "bundle/vimshell"]
+	path = bundle/vimshell
+	url = git://github.com/Shougo/vimshell.git
+[submodule "bundle/vimproc"]
+	path = bundle/vimproc
+	url = git://github.com/Shougo/vimproc.git
