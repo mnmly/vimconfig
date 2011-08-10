@@ -18,25 +18,27 @@ filetype on
 "Set incremental searching
 set incsearch
 
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
-set softtabstop=4
+set softtabstop=2
 
-autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType python set omnifunc=pythoncomplete#Complete|set tabstop=4|set shiftwidth=4|set softtabstop=4
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType objc set omnifunc=objc#cocoacomplete#Complete
-
-" Auto detect less and treat as css
 autocmd BufRead *.less set omnifunc=csscomplete#CompleteCSS syntax=less
+autocmd BufRead *.sass set tabstop=2|set shiftwidth=2|set softtabstop=2
 
+"JSDoc vim plugin
+au FileType javascript nnoremap <buffer> <C-c>  :<C-u>call WriteJSDocComment()<CR>
 
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menu
 "Python 
 autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
+
 "Jad3
 autocmd BufRead *.jade set smartindent tabstop=2 softtabstop=2 shiftwidth=2
 
@@ -70,7 +72,7 @@ nmap <space> :
 imap jj <esc>
 
 "Map ,is to => 
-autocmd FileType ruby iab @is =>
+"autocmd FileType ruby iab @is =>
 
 "-------------------------------------------------
 " Auto-save
