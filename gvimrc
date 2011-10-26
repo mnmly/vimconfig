@@ -2,4 +2,5 @@ colorscheme pyte
 set antialias
 set go-=L
 set guioptions-=r
-set guifont=Consolas:h12
+set guifont=Inconsolata:h13
+set linespace=4
