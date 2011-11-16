@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/mnmly/Development/Learnings/Cocoa/Objective-C Programming - The Big Nerd Ranch Guide/Challenge-AdjustcentAFinder/Challenge-AdjustcentAFinder'
-let g:netrw_dirhist_2='/Users/mnmly/Development/Learnings/Cocoa/Objective-C Programming - The Big Nerd Ranch Guide/Challenge-AdjustcentAFinder'
-let g:netrw_dirhist_3='/Users/mnmly/Development/Learnings/Cocoa/Objective-C Programming - The Big Nerd Ranch Guide/Challenge-AdjustcentAFinder/Challenge-AdjustcentAFinder'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/mnmly/.vim/snippets'
+let g:netrw_dirhist_2='/Users/mnmly/.vim'
+let g:netrw_dirhist_3='/Users/mnmly/Development/Learnings/Cocoa/Objective-C Programming - The Big Nerd Ranch Guide/Challenge-AdjustcentAFinder'
+let g:netrw_dirhist_4='/Users/mnmly/Development/Learnings/Cocoa/Objective-C Programming - The Big Nerd Ranch Guide/Challenge-AdjustcentAFinder/Challenge-AdjustcentAFinder'
