@@ -22,3 +22,6 @@
 [submodule "bundle/vim-haml"]
 	path = bundle/vim-haml
 	url = git://github.com/tpope/vim-haml.git
+[submodule "bundle/cocoa"]
+	path = bundle/cocoa
+	url = git://github.com/msanders/cocoa.vim.git
