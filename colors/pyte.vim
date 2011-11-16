@@ -1,4 +1,3 @@
-
 set background=light
 
 hi clear
@@ -29,12 +28,11 @@ endif
 hi Title      guifg=#202020 gui=bold
 hi Underlined  guifg=#202020 gui=underline
 
-
 hi Cursor    guifg=black   guibg=#b0b4b8
-hi lCursor   guifg=black   guibg=white
-hi LineNr    guifg=#e0e0e0 guibg=#ffffff
+hi lCursor   guifg=black   guibg=#e7e7e7
+hi LineNr    guifg=#cccccc guibg=#eeeeee
 
-hi Normal    guifg=#404850   guibg=#ffffff
+hi Normal    guifg=#404850   guibg=#eeeeee
 
 hi StatusLine guifg=white guibg=#d0d0d0 gui=bold,italic
 hi StatusLineNC guifg=#506070 guibg=#e0e0e0 gui=italic
@@ -76,10 +74,9 @@ hi Define      guifg=#1060a0 gui=bold
 hi Error      guifg=red guibg=white gui=bold,underline
 hi Todo       guifg=#a0b0c0 guibg=NONE gui=italic,bold,underline
 
-" Python: %(...)s - constructs, encoding
-hi Special    guifg=#70a0d0 gui=italic
-
 hi Operator   guifg=#408010
+
+
 
 " color of <TAB>s etc...  
 "hi SpecialKey guifg=#d8a080 guibg=#e8e8e8 gui=italic  
@@ -91,4 +88,12 @@ hi DiffText guifg=NONE guibg=#f0c8c8 gui=italic,bold
 hi DiffAdd guifg=NONE guibg=#c0e0d0 gui=italic,bold
 hi DiffDelete guifg=NONE guibg=#f0e0b0 gui=italic,bold
 
+" Objc
+hi Special guifg=#6C9380
+hi objcMessageName guifg=#70a0d0 gui=italic
 
+hi Normal guifg=#56626B
+"hi Type    guifg=#C0CA55
+hi Type     guifg=#F07C6C
+hi Constant guifg=#C0CA55
+hi String   guifg=#AD5472

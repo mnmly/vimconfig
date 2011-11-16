@@ -1,5 +1,7 @@
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+call pathogen#infect()
+
+syntax on
+filetype plugin indent on
 
 if has("gui_running")
 	set guioptions=egmrt
@@ -12,7 +14,9 @@ set linespace=3
 set nowrap
 
 
-let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+let g:netrw_browse_split = 2
+let g:netrw_altv = 1
+
 filetype on
 
 "Set incremental searching
@@ -131,3 +135,4 @@ let g:acp_behaviorSnipmateLength = 1
 if has("autocmd")
     autocmd bufwritepost .vimrc source $MYVIMRC
 endif
+
