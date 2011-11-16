@@ -31,3 +31,15 @@
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = https://github.com/msanders/snipmate.vim.git
+[submodule "bundle/greplace.vim"]
+	path = bundle/greplace.vim
+	url = git://github.com/vim-scripts/greplace.vim.git
+[submodule "bundle/vim-liquid"]
+	path = bundle/vim-liquid
+	url = git://github.com/tpope/vim-liquid.git
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = https://github.com/tpope/vim-markdown.git
+[submodule "bundle/vim-quickrun"]
+	path = bundle/vim-quickrun
+	url = git://github.com/thinca/vim-quickrun.git
