@@ -27,7 +27,7 @@
 	url = git://github.com/msanders/cocoa.vim.git
 [submodule "bundle/clang_complete"]
 	path = bundle/clang_complete
-	url = git://github.com/Rip-Rip/clang_complete.git
+	url = git://github.com/Shougo/clang_complete.git
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = https://github.com/msanders/snipmate.vim.git
@@ -46,3 +46,12 @@
 [submodule "bundle/newtr.vim"]
 	path = bundle/newtr.vim
 	url = git://github.com/vim-scripts/netrw.vim.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = git://github.com/ervandew/supertab.git
+[submodule "bundle/autocomplpop"]
+	path = bundle/autocomplpop
+	url = git://github.com/vim-scripts/AutoComplPop.git
+[submodule "bundle/neocomplecache"]
+	path = bundle/neocomplecache
+	url = git://github.com/Shougo/neocomplcache.git

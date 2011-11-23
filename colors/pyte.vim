@@ -8,7 +8,7 @@ endif
 let colors_name = "pyte"
 
 if version >= 700
-  hi CursorLine guibg=#f6f6f6
+  hi CursorLine guibg=#eeeeee
   hi CursorColumn guibg=#eaeaea
   hi MatchParen guifg=white guibg=#80a090 gui=bold
 
@@ -30,18 +30,18 @@ hi Underlined  guifg=#202020 gui=underline
 
 hi Cursor    guifg=black   guibg=#b0b4b8
 hi lCursor   guifg=black   guibg=#e7e7e7
-hi LineNr    guifg=#cccccc guibg=#eeeeee
+hi LineNr    guifg=#cccccc guibg=#fefefe
 
-hi Normal    guifg=#404850   guibg=#eeeeee
+hi Normal    guifg=#404850   guibg=#fefefe
 
 hi StatusLine guifg=white guibg=#d0d0d0 gui=bold,italic
 hi StatusLineNC guifg=#506070 guibg=#e0e0e0 gui=italic
-hi VertSplit guifg=#ffffff guibg=#ffffff gui=NONE
+hi VertSplit guifg=#ffffff guibg=#fefefe gui=NONE
 
 " hi Folded    guifg=#708090 guibg=#c0d0e0
 hi Folded    guifg=#a0a0a0 guibg=#e8e8e8 gui=italic
 
-hi NonText   guifg=#ffffff guibg=#ffffff
+hi NonText   guifg=#fefefe guibg=#fefefe
 " Kommentare
 hi Comment   guifg=#a0b0c0               gui=italic
 

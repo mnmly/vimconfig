@@ -1,5 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/mnmly/.vim'
-let g:netrw_dirhist_2='/Users/mnmly/.vim/colors'
-let g:netrw_dirhist_3='/Users/mnmly/Development/Learnings/Cocoa/Objective-C Programming - The Big Nerd Ranch Guide/Challenge-AdjustcentAFinder/Challenge-AdjustcentAFinder'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/Users/mnmly/Development/SimpleHonestWork/Noun-Project/store/shopify/store_dev/store_dev'
+let g:netrw_dirhist_2='/Users/mnmly/Development/SimpleHonestWork/Noun-Project/store/shopify/store_dev/store_dev/spiders'

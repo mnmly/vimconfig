@@ -31,7 +31,7 @@ autocmd FileType python set omnifunc=pythoncomplete#Complete|set tabstop=4|set s
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-autocmd FileType objc set omnifunc=objc#cocoacomplete#Complete
+autocmd FileType objc set softtabstop=4|set shiftwidth=4
 autocmd BufRead *.less set omnifunc=csscomplete#CompleteCSS syntax=less
 autocmd BufRead *.sass set tabstop=2|set shiftwidth=2|set softtabstop=2
 
@@ -77,7 +77,7 @@ imap jj <esc>
 
 "Map ,is to => 
 "autocmd FileType ruby iab @is =>
-
+inoremap <C-f> <C-x><C-o>
 "-------------------------------------------------
 " Auto-save
 "-------------------------------------------------
@@ -128,7 +128,14 @@ end
 "-------------------------------------------------
 " snipMate Settings
 "-------------------------------------------------
-let g:SuperTabDefaultCompletionType = "context"
+"let g:SuperTabDefaultCompletionType = "context"
+let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_underbar_completion = 1
+let g:neocomplcache_enahle_smart_case            = 1
+let g:neocomplcache_enable_camel_case_completion = 1
+" we don't want the completion menu to auto pop-up when we are in text files
+let g:neocomplcache_lock_buffer_name_pattern = '\v(\.md|\.txt)'
+
 :filetype plugin on
 let g:acp_behaviorSnipmateLength = 1
 
