@@ -3,7 +3,7 @@
 	url = git://github.com/claco/jasmine.vim.git
 [submodule "bundle/command-t"]
 	path = bundle/command-t
-	url = https://github.com/wincent/Command-T.git
+	url = git://git.wincent.com/command-t.git
 [submodule "bundle/js-test-driver"]
 	path = bundle/js-test-driver
 	url = https://github.com/hujinpu/js-test-driver-vim-plugin.git

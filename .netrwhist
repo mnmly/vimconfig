@@ -1,6 +1,6 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/mnmly/Development/Personal/wktokyo/public/wp-content/themes/foundation'
-let g:netrw_dirhist_2='/Users/mnmly/Development/SimpleHonestWork/Noun-Project'
+let g:netrw_dirhist_1='/Users/mnmly/Development/SimpleHonestWork/Noun-Project/store/shopify/assets/src/coffee'
+let g:netrw_dirhist_2='/Users/mnmly/Development/SimpleHonestWork/Noun-Project/src/coffee'
 let g:netrw_dirhist_3='/Users/mnmly/Development/SimpleHonestWork/Noun-Project/src'
-let g:netrw_dirhist_4='/Users/mnmly/Development/SimpleHonestWork/Noun-Project/src/coffee'
+let g:netrw_dirhist_4='/Users/mnmly/Development/SimpleHonestWork/Noun-Project'
