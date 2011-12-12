@@ -55,3 +55,6 @@
 [submodule "bundle/neocomplecache"]
 	path = bundle/neocomplecache
 	url = git://github.com/Shougo/neocomplcache.git
+[submodule "bundle/EasyGrep"]
+	path = bundle/EasyGrep
+	url = git://github.com/vim-scripts/EasyGrep.git

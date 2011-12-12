@@ -1,7 +1,7 @@
 call pathogen#infect()
 
 syntax on
-filetype plugin indent on
+filetype plugin on
 
 if has("gui_running")
 	set guioptions=egmrt
