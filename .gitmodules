@@ -58,3 +58,6 @@
 [submodule "bundle/EasyGrep"]
 	path = bundle/EasyGrep
 	url = git://github.com/vim-scripts/EasyGrep.git
+[submodule "bundle/Waldo"]
+	path = bundle/Waldo
+	url = git://github.com/jtaby/Waldo.git
