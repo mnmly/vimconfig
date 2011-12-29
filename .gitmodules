@@ -61,3 +61,6 @@
 [submodule "bundle/Waldo"]
 	path = bundle/Waldo
 	url = git://github.com/jtaby/Waldo.git
+[submodule "bundle/vim-stylus"]
+	path = bundle/vim-stylus
+	url = git://github.com/wavded/vim-stylus.git

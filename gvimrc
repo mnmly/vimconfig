@@ -1,4 +1,4 @@
-colorscheme pyte 
+colorscheme jellybeans
 set antialias
 set go-=L
 set guioptions-=r
