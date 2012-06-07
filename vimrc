@@ -36,6 +36,7 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType objc set softtabstop=4|set shiftwidth=4
 autocmd BufRead *.less set omnifunc=csscomplete#CompleteCSS syntax=less
 autocmd BufRead *.sass set tabstop=2|set shiftwidth=2|set softtabstop=2
+autocmd BufRead *.coffee set tabstop=2|set shiftwidth=2|set softtabstop=2|set syntax=coffee
 
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menu
