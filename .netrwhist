@@ -1,7 +1,7 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/mnmly/Documents/Dropbox/Dropbox/Public/search-proto/src/coffee'
-let g:netrw_dirhist_2='/Users/mnmly/Documents/Dropbox/Dropbox/Public/search-proto/src'
-let g:netrw_dirhist_3='/Users/mnmly/Documents/Dropbox/Dropbox/Public/search-proto'
-let g:netrw_dirhist_4='/Users/mnmly'
-let g:netrw_dirhist_5='/Users/mnmly/Documents/Dropbox/Dropbox/Public/search-proto/documentation'
+let g:netrw_dirhist_1='/Users/mnmly/.dotfiles/vim/vim.symlink/bundle/vim-snipmate'
+let g:netrw_dirhist_2='/Users/mnmly/.dotfiles/vim/vim.symlink/bundle'
+let g:netrw_dirhist_3='/Users/mnmly/.dotfiles/vim/vim.symlink'
+let g:netrw_dirhist_4='/Users/mnmly/.dotfiles/vim'
+let g:netrw_dirhist_5='/Users/mnmly/.dotfiles/vim/vim.symlink'

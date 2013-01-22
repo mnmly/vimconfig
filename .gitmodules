@@ -25,9 +25,6 @@
 [submodule "bundle/clang_complete"]
 	path = bundle/clang_complete
 	url = git://github.com/Shougo/clang_complete.git
-[submodule "bundle/snipmate"]
-	path = bundle/snipmate
-	url = https://github.com/msanders/snipmate.vim.git
 [submodule "bundle/greplace.vim"]
 	path = bundle/greplace.vim
 	url = git://github.com/vim-scripts/greplace.vim.git
@@ -63,7 +60,37 @@
 	url = git://github.com/wavded/vim-stylus.git
 [submodule "bundle/command-t"]
 	path = bundle/command-t
-	url = git://github.com/wincent/Command-T.git
+	url = git://git.wincent.com/command-t.git
 [submodule "bundle/vim-instant-markdown"]
 	path = bundle/vim-instant-markdown
 	url = git://github.com/suan/vim-instant-markdown.git
+[submodule "vim-github-colorscheme"]
+	path = vim-github-colorscheme
+	url = /Users/mnmly/Development/GitHub/vim-github-colorscheme
+[submodule "bundle/vim-github-colorscheme"]
+	path = bundle/vim-github-colorscheme
+	url = /Users/mnmly/Development/GitHub/vim-github-colorscheme
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = git://github.com/godlygeek/tabular.git
+[submodule "bundle/vim-json"]
+	path = bundle/vim-json
+	url = git://github.com/leshill/vim-json.git
+[submodule "bundle/vim-commentary"]
+	path = bundle/vim-commentary
+	url = git://github.com/tpope/vim-commentary.git
+[submodule "bundle/WriteJSDocComment"]
+	path = bundle/WriteJSDocComment
+	url = git://github.com/tanabe/WriteJSDocComment.vim.git
+[submodule "bundle/vim-snipmate"]
+	path = bundle/vim-snipmate
+	url = git://github.com/garbas/vim-snipmate.git
+[submodule "bundle/tlib_vim"]
+	path = bundle/tlib_vim
+	url = https://github.com/tomtom/tlib_vim.git
+[submodule "bundle/vim-addon-mw-utils"]
+	path = bundle/vim-addon-mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "bundle/snipmate-snippets"]
+	path = bundle/snipmate-snippets
+	url = https://github.com/honza/snipmate-snippets.git

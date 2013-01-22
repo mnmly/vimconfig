@@ -27,16 +27,21 @@ set shiftwidth=2
 set expandtab
 set softtabstop=2
 
-
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType python set tabstop=4|set shiftwidth=4|set softtabstop=4
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS|set softtabstop=2
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType objc set softtabstop=4|set shiftwidth=4
 autocmd BufRead *.less set omnifunc=csscomplete#CompleteCSS syntax=less
 autocmd BufRead *.sass set tabstop=2|set shiftwidth=2|set softtabstop=2
+autocmd BufRead *.styl set tabstop=2|set shiftwidth=2|set softtabstop=2
 autocmd BufRead *.coffee set tabstop=2|set shiftwidth=2|set softtabstop=2|set syntax=coffee
+
+"JSdoc git://github.com/tanabe/WriteJSDocComment.vim.git
+"au FileType javascript nnoremap <buffer> <C-c>  :<C-u>call WriteJSDocComment()<CR>
+
+
 
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menu
@@ -115,6 +120,24 @@ function! JavaScriptFold()
 endfunction
 au FileType javascript call JavaScriptFold()
 au FileType javascript setl fen
+
+"-------------------------------------------------
+" ctrlp.vim
+"-------------------------------------------------
+
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+
+"-------------------------------------------------
+" Tabularize
+"-------------------------------------------------
+if exists(":Tabularize")
+  nmap <Leader>a= :Tabularize /=<CR>
+  vmap <Leader>a= :Tabularize /=<CR>
+  nmap <Leader>a: :Tabularize /:\zs<CR>
+  vmap <Leader>a: :Tabularize /:\zs<CR>
+endif
+
 
 "-------------------------------------------------
 " PeepOpen Settings
