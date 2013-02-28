@@ -100,6 +100,3 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = git@github.com:majutsushi/tagbar.git
-[submodule "bundle/vim-processing"]
-	path = bundle/vim-processing
-	url = git@github.com:sophacles/vim-processing.git
