@@ -1,7 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/mnmly/.dotfiles/vim/vim.symlink/bundle/vim-snipmate'
-let g:netrw_dirhist_2='/Users/mnmly/.dotfiles/vim/vim.symlink/bundle'
-let g:netrw_dirhist_3='/Users/mnmly/.dotfiles/vim/vim.symlink'
-let g:netrw_dirhist_4='/Users/mnmly/.dotfiles/vim'
-let g:netrw_dirhist_5='/Users/mnmly/.dotfiles/vim/vim.symlink'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/mnmly/Development/Personal/google-jp-datavis/app/js/_/layout/intro-park/images'
+let g:netrw_dirhist_2='/Users/mnmly/Development/Personal/google-jp-datavis/app/js/_/layout'
+let g:netrw_dirhist_3='/Users/mnmly/Development/Personal/google-jp-datavis/app/js/_/layout/intro-park/images'
+let g:netrw_dirhist_4='/Users/mnmly/Development/quantiFind/qfdash-master'
+let g:netrw_dirhist_5='/Users/mnmly/Development/quantiFind/qfdash-master/web-app'
+let g:netrw_dirhist_6='/Users/mnmly/Development/quantiFind/qfdash-master/web-app/js'
