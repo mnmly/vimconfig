@@ -38,6 +38,9 @@ autocmd BufRead *.sass set tabstop=2|set shiftwidth=2|set softtabstop=2
 autocmd BufRead *.styl set tabstop=2|set shiftwidth=2|set softtabstop=2
 autocmd BufRead *.coffee set tabstop=2|set shiftwidth=2|set softtabstop=2|set syntax=coffee
 
+" Hard mode
+" autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+
 "JSdoc git://github.com/tanabe/WriteJSDocComment.vim.git
 "au FileType javascript nnoremap <buffer> <C-c>  :<C-u>call WriteJSDocComment()<CR>
 
@@ -165,6 +168,12 @@ let g:acp_behaviorSnipmateLength = 1
 if has("autocmd")
     autocmd bufwritepost .vimrc source $MYVIMRC
 endif
+
+"-------------------------------------------------
+" vim-processing: https://github.com/vortura/vim-processing
+"-------------------------------------------------
+
+let g:use_processing_java = 1
 
 "-------------------------------------------------
 " tagbar: https://github.com/majutsushi/tagbar/wiki
