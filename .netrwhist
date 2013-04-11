@@ -1,5 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/mnmly/Development/Personal/seinan/new/includes/work'
-let g:netrw_dirhist_2='/Users/mnmly/Development/Personal/seinan/new/includes'
-let g:netrw_dirhist_3='/Users/mnmly/Development/Personal/seinan/new'
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/hiroaki.yamane'
+let g:netrw_dirhist_2='/Users/hiroaki.yamane/Development/AKQA/demo'
+let g:netrw_dirhist_3='/Users/hiroaki.yamane/Development/AKQA'
+let g:netrw_dirhist_4='/Users/hiroaki.yamane/Development'
+let g:netrw_dirhist_5='/Users/hiroaki.yamane'
+let g:netrw_dirhist_6='/Users/hiroaki.yamane/.vim'
+let g:netrw_dirhist_7='/Users/hiroaki.yamane/.vim/colors'

@@ -1,4 +1,4 @@
-colorscheme grb256
+colorscheme espresso-soda
 set antialias
 set go-=L
 set guioptions-=r
