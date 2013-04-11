@@ -64,12 +64,6 @@
 [submodule "bundle/vim-instant-markdown"]
 	path = bundle/vim-instant-markdown
 	url = git://github.com/suan/vim-instant-markdown.git
-[submodule "vim-github-colorscheme"]
-	path = vim-github-colorscheme
-	url = /Users/mnmly/Development/GitHub/vim-github-colorscheme
-[submodule "bundle/vim-github-colorscheme"]
-	path = bundle/vim-github-colorscheme
-	url = /Users/mnmly/Development/GitHub/vim-github-colorscheme
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
@@ -103,7 +97,6 @@
 [submodule "bundle/vim-processing"]
 	path = bundle/vim-processing
 	url = git@github.com:vortura/vim-processing.git
-
 [submodule "bundle/ctrlp.vim"]
 	path = bundle/ctrlp.vim
 	url = git@github.com:kien/ctrlp.vim.git
