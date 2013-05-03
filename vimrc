@@ -37,6 +37,8 @@ autocmd BufRead *.less set omnifunc=csscomplete#CompleteCSS syntax=less
 autocmd BufRead *.sass set tabstop=2|set shiftwidth=2|set softtabstop=2
 autocmd BufRead *.styl set tabstop=2|set shiftwidth=2|set softtabstop=2
 autocmd BufRead *.coffee set tabstop=2|set shiftwidth=2|set softtabstop=2|set syntax=coffee
+au BufRead,BufNewFile *.pde set filetype=arduino
+au BufRead,BufNewFile *.ino set filetype=arduino
 
 " Hard mode
 " autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()

@@ -63,7 +63,7 @@
 	url = git://git.wincent.com/command-t.git
 [submodule "bundle/vim-instant-markdown"]
 	path = bundle/vim-instant-markdown
-	url = git://github.com/suan/vim-instant-markdown.git
+	url = git@github.com:suan/vim-instant-markdown.git
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
@@ -109,3 +109,6 @@
 [submodule "bundle/vim-unimpaired"]
 	path = bundle/vim-unimpaired
 	url = git://github.com/tpope/vim-unimpaired.git
+[submodule "bundle/vim-arduino"]
+	path = bundle/vim-arduino
+	url = git@github.com:tclem/vim-arduino.git
