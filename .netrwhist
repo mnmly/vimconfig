@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/hiroaki.yamane/Development/AKQA/Ubisoft.com/workspace/styles'
+let g:netrw_dirhist_2='/Users/hiroaki.yamane/Development/AKQA/Ubisoft.com/workspace/styles/globals'
+let g:netrw_dirhist_3='/Users/hiroaki.yamane/Development/AKQA/Ubisoft.com/workspace/scripts/modules/purchase'
+let g:netrw_dirhist_4='/Users/hiroaki.yamane/Development/AKQA/Ubisoft.com/workspace/scripts/modules'
+let g:netrw_dirhist_5='/Users/hiroaki.yamane/Development/AKQA/Ubisoft.com'
