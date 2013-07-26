@@ -109,3 +109,6 @@
 [submodule "bundle/vim-arduino"]
 	path = bundle/vim-arduino
 	url = git@github.com:tclem/vim-arduino.git
+[submodule "bundle/vim-json"]
+	path = bundle/vim-json
+	url = git@github.com:elzr/vim-json.git
