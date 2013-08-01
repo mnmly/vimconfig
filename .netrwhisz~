@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/hiroaki.yamane/Development/AKQA/nike-pro-services/client/card-sequence'
+let g:netrw_dirhist_2='/Users/hiroaki.yamane/Development/AKQA/nike-pro-services/client/card-sequence/versions/swipe'
+let g:netrw_dirhist_3='/Users/hiroaki.yamane/Development/AKQA/nike-pro-services/client/card-sequence/versions'
+let g:netrw_dirhist_4='/Users/hiroaki.yamane/Development/AKQA/nike-pro-services/client'
+let g:netrw_dirhist_5='/Users/hiroaki.yamane/Development/AKQA/nike-pro-services/client/card-swipe'
+let g:netrw_dirhist_6='/Users/hiroaki.yamane/Development/AKQA/nike-pro-services/client'
+let g:netrw_dirhist_7='/Users/hiroaki.yamane/Development/AKQA/nike-pro-services/client/card-swipe'

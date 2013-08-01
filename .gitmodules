@@ -67,9 +67,6 @@
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
-[submodule "bundle/vim-json"]
-	path = bundle/vim-json
-	url = git://github.com/leshill/vim-json.git
 [submodule "bundle/vim-commentary"]
 	path = bundle/vim-commentary
 	url = git://github.com/tpope/vim-commentary.git
@@ -112,3 +109,6 @@
 [submodule "bundle/vim-arduino"]
 	path = bundle/vim-arduino
 	url = git@github.com:tclem/vim-arduino.git
+[submodule "bundle/vim-json"]
+	path = bundle/vim-json
+	url = git@github.com:elzr/vim-json.git
