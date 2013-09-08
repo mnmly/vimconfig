@@ -172,6 +172,12 @@ if has("autocmd")
 endif
 
 "-------------------------------------------------
+" Tern
+"-------------------------------------------------
+let g:tern_map_keys=1
+let g:tern_show_argument_hints='on_hold'
+
+"-------------------------------------------------
 " Alphabetize css
 "-------------------------------------------------
 :command! SortCSSBraceContents :g#\({\n\})\@<=#.,/}/sort
