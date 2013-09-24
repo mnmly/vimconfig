@@ -1,21 +1,5 @@
 let g:netrw_dirhistmax  =10
-<<<<<<< HEAD
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/Users/hiroaki.yamane/Development/Personal/instagram-app/client'
-let g:netrw_dirhist_2='/Users/hiroaki.yamane/Development/Personal/instagram-app/client/splash'
-let g:netrw_dirhist_3='/Users/hiroaki.yamane/Development/AKQA/nike-pro-services'
-let g:netrw_dirhist_4='/Users/hiroaki.yamane/Development/AKQA/nike-pro-services/client'
-let g:netrw_dirhist_5='/Users/hiroaki.yamane/Development/AKQA/nike-pro-services/client/public'
-let g:netrw_dirhist_6='/Users/hiroaki.yamane/Development/AKQA/nike-pro-services/client/public/swipe-select'
-let g:netrw_dirhist_7='/Users/hiroaki.yamane/Development/AKQA/team'
-let g:netrw_dirhist_8='/Users/hiroaki.yamane/Development/Github/component-styl'
-=======
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/mnmly/Development/Personal/gui'
-let g:netrw_dirhist_2='/Users/mnmly/Development/Personal/gui/node_modules'
-let g:netrw_dirhist_3='/Users/mnmly/Development/Personal/gui/node_modules/component'
-let g:netrw_dirhist_4='/Users/mnmly/Development/Personal/gui/node_modules/component/bin'
-let g:netrw_dirhist_5='/Users/mnmly/Development/GitHub'
-let g:netrw_dirhist_6='/Users/mnmly/.dotfiles/vim/vim.symlink'
-let g:netrw_dirhist_7='/Users/mnmly/Development/GitHub/tween'
->>>>>>> 0c9d8bf75ad034ee31985994674fe6f80ef7c97f
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/hiroaki.yamane/.vim/bundle/snipmate-snippets'
+let g:netrw_dirhist_2='/Users/hiroaki.yamane/.vim/bundle/snipmate-snippets/snippets'
+let g:netrw_dirhist_3='/'
