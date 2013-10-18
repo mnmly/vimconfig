@@ -1,11 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/hiroaki.yamane/Development/AKQA/passbook-tutorial/lib/user'
-let g:netrw_dirhist_2='/Users/hiroaki.yamane/Development/AKQA/passbook-tutorial/lib'
-let g:netrw_dirhist_3='/Users/hiroaki.yamane/Development/AKQA/passbook-tutorial/lib/user'
-let g:netrw_dirhist_4='/Users/hiroaki.yamane/Development/AKQA/passbook-tutorial/lib'
-let g:netrw_dirhist_5='/Users/hiroaki.yamane/Development/AKQA/passbook-tutorial/lib/pass-controller'
-let g:netrw_dirhist_6='/Users/hiroaki.yamane/Development/AKQA/passbook-tutorial/lib'
-let g:netrw_dirhist_7='/Users/hiroaki.yamane/Development/AKQA/passbook-tutorial/lib/pass-form'
-let g:netrw_dirhist_8='/Users/hiroaki.yamane/Development/AKQA/passbook-tutorial/lib'
-let g:netrw_dirhist_9='/Users/hiroaki.yamane/Development/AKQA/passbook-tutorial/lib/model-form'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/hiroaki.yamane/Development/AKQA/team/lib'
+let g:netrw_dirhist_2='/Users/hiroaki.yamane/Development/AKQA/team/lib/cover'
+let g:netrw_dirhist_3='/Users/hiroaki.yamane/Development/AKQA/team/lib'
+let g:netrw_dirhist_4='/Users/hiroaki.yamane/Development/AKQA/team/lib/grid'
+let g:netrw_dirhist_5='/Users/hiroaki.yamane/Downloads/z'
