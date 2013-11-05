@@ -145,15 +145,6 @@ endif
 
 
 "-------------------------------------------------
-" PeepOpen Settings
-"-------------------------------------------------
-
-if has("gui_macvim")
-    map <D-t> <Plug>PeepOpen
-end
-
-
-"-------------------------------------------------
 " snipMate Settings
 "-------------------------------------------------
 "let g:SuperTabDefaultCompletionType = "context"
@@ -232,3 +223,21 @@ let s:ctags_opts = '
   \ --regex-coffee=/(constructor:[[:space:]]\()@[A-Za-z.]+(,[[:space:]]@([A-Za-z.]+)){9}/\3/f,field/'
 
 let $CTAGS = substitute(s:ctags_opts, '\v\([nst]\)', '\\', 'g')
+
+" Clang complete stuff
+let g:clang_auto_select=1
+let g:clang_complete_auto=0
+let g:clang_complete_copen=1
+let g:clang_hl_errors=1
+let g:clang_periodic_quickfix=0
+let g:clang_snippets=1
+let g:clang_snippets_engine="clang_complete"
+let g:clang_conceal_snippets=1
+let g:clang_exec="clang"
+let g:clang_user_options=""
+let g:clang_auto_user_options="path, .clang_complete"
+let g:clang_use_library=1
+let g:clang_library_path="/usr/local/lib"
+let g:clang_sort_algo="priority"
+let g:clang_complete_macros=1
+let g:clang_complete_patterns=0
