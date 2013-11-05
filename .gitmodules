@@ -115,12 +115,12 @@
 [submodule "bundle/vim-glsl"]
 	path = bundle/vim-glsl
 	url = git@github.com:tikhomirov/vim-glsl.git
-[submodule "bundle/clang_complete"]
-	path = bundle/clang_complete
-	url = git@github.com:Rip-Rip/clang_complete.git
 [submodule "bundle/xcodebuild.vim"]
 	path = bundle/xcodebuild.vim
 	url = git@github.com:jerrymarino/xcodebuild.vim.git
 [submodule "bundle/vim-easymotion"]
 	path = bundle/vim-easymotion
 	url = git@github.com:Lokaltog/vim-easymotion.git
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = git@github.com:Valloric/YouCompleteMe.git
