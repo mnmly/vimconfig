@@ -22,9 +22,6 @@
 [submodule "bundle/cocoa"]
 	path = bundle/cocoa
 	url = git://github.com/msanders/cocoa.vim.git
-[submodule "bundle/clang_complete"]
-	path = bundle/clang_complete
-	url = git://github.com/Shougo/clang_complete.git
 [submodule "bundle/greplace.vim"]
 	path = bundle/greplace.vim
 	url = git://github.com/vim-scripts/greplace.vim.git
@@ -118,3 +115,6 @@
 [submodule "bundle/vim-glsl"]
 	path = bundle/vim-glsl
 	url = git@github.com:tikhomirov/vim-glsl.git
+[submodule "bundle/clang_complete"]
+	path = bundle/clang_complete
+	url = git@github.com:Rip-Rip/clang_complete.git
