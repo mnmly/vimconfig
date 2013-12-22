@@ -33,6 +33,7 @@ autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS|set softt
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType objc set softtabstop=4|set shiftwidth=4
+autocmd FileType cpp set softtabstop=4|set shiftwidth=4
 autocmd BufRead *.less set omnifunc=csscomplete#CompleteCSS syntax=less
 autocmd BufRead *.sass set tabstop=2|set shiftwidth=2|set softtabstop=2
 autocmd BufRead *.styl set tabstop=2|set shiftwidth=2|set softtabstop=2
@@ -53,27 +54,14 @@ set completeopt=menu
 "Python 
 autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 
-"Jad3
+"Jade
 autocmd BufRead *.jade set smartindent tabstop=2 softtabstop=2 shiftwidth=2
-
-" SnipMate
-autocmd FileType python set ft=python.django
-autocmd FileType html set ft=htmldjango.html
 
 " Open vimrc
 nmap ,ev : tabedit $MYVIMRC<cr>
 
 " Change zen coding key map
 let g:user_zen_expandabbr_key = '<C-e>'
-
-"-------------------------------------------------
-" Abbreviations 
-"-------------------------------------------------
-
-"iabbrev mysite ftp://jeff-way.com@jeffrey-way.com/domains/
-abbrev ff :! open -a firefox.app %p<cr>
-abbrev chrome :! open -a Google\ Chrome.app %p<cr>
-
 
 "-------------------------------------------------
 " Key Mapping 
@@ -147,13 +135,16 @@ endif
 "-------------------------------------------------
 " snipMate Settings
 "-------------------------------------------------
+let g:snips_trigger_key = '<C-\>'
+
 "let g:SuperTabDefaultCompletionType = "context"
-let g:neocomplcache_enable_at_startup = 1
-let g:neocomplcache_enable_underbar_completion = 1
-let g:neocomplcache_enahle_smart_case            = 1
-let g:neocomplcache_enable_camel_case_completion = 1
+"let g:neocomplcache_enable_at_startup = 1
+"let g:neocomplcache_enable_underbar_completion = 1
+"let g:neocomplcache_enahle_smart_case            = 1
+"let g:neocomplcache_enable_camel_case_completion = 1
+
 " we don't want the completion menu to auto pop-up when we are in text files
-let g:neocomplcache_lock_buffer_name_pattern = '\v(\.md|\.txt)'
+" let g:neocomplcache_lock_buffer_name_pattern = '\v(\.md|\.txt)'
 
 :filetype plugin on
 let g:acp_behaviorSnipmateLength = 1
@@ -169,11 +160,6 @@ let g:tern_map_keys=1
 let g:tern_show_argument_hints='on_hold'
 
 "-------------------------------------------------
-" Alphabetize css
-"-------------------------------------------------
-:command! SortCSSBraceContents :g#\({\n\})\@<=#.,/}/sort
-
-"-------------------------------------------------
 " vim-processing: https://github.com/vortura/vim-processing
 "-------------------------------------------------
 
@@ -184,60 +170,6 @@ let g:use_processing_java = 1
 "-------------------------------------------------
 nmap <Leader>l :TagbarToggle<CR>
 
-" CoffeeScript Support
-let g:tagbar_type_coffee = {
-    \ 'ctagstype' : 'coffee',
-    \ 'kinds'     : [
-        \ 'c:classes',
-        \ 'm:methods',
-        \ 'f:functions',
-        \ 'v:variables',
-        \ 'f:fields',
-    \ ]
-\ }
+"let g:syntastic_cpp_include_dirs = ['/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/openFrameworks', '/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/openFrameworks/3d', '/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/openFrameworks/app', '/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/openFrameworks/communication', '/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/openFrameworks/events', '/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/openFrameworks/gl', '/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/openFrameworks/graphics', '/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/openFrameworks/math', '/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/openFrameworks/sound', '/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/openFrameworks/types', '/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/openFrameworks/utils', '/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/openFrameworks/video', '/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/assimp/include','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/assimp/include/Compiler','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/cairo/include','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/cairo/include/cairo','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/cairo/include/libpng15','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/cairo/include/pixman-1','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/fmodex/include','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/FreeImage/include','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/freetype/include','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/freetype/include/freetype2','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/freetype/include/freetype2/freetype','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/freetype/include/freetype2/freetype/config','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/freetype/include/freetype2/freetype/internal','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/freetype/include/freetype2/freetype/internal/services','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/glew/include','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/glew/include/GL','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/glut/include','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/poco/include','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/poco/include/CppUnit','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/poco/include/Poco','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/poco/include/Poco/Crypto','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/poco/include/Poco/Data','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/poco/include/Poco/DOM','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/poco/include/Poco/Dynamic','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/poco/include/Poco/Net','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/poco/include/Poco/SAX','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/poco/include/Poco/Util','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/poco/include/Poco/XML','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/poco/include/Poco/Zip','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/rtAudio/include','/Users/mnmly/Development/of-v0.8.0/apps/projects/cameraBuffer/../../../libs/tess2/include' ]
+let g:syntastic_cpp_check_header = 0
 
-" Posix regular expressions for matching interesting items. Since this will 
-" be passed as an environment variable, no whitespace can exist in the options
-" so [:space:] is used instead of normal whitespaces.
-" Adapted from: https://gist.github.com/2901844
-let s:ctags_opts = '
-  \ --langdef=coffee
-  \ --langmap=coffee:.coffee
-  \ --regex-coffee=/(^|=[[:space:]])*class[[:space:]]([A-Za-z]+\.)*([A-Za-z]+)([[:space:]]extends[[:space:]][A-Za-z.]+)?$/\3/c,class/
-  \ --regex-coffee=/^[[:space:]]*(module\.)?(exports\.)?@?([A-Za-z.]+):.*[-=]>.*$/\3/m,method/
-  \ --regex-coffee=/^[[:space:]]*(module\.)?(exports\.)?([A-Za-z.]+)[[:space:]]+=.*[-=]>.*$/\3/f,function/
-  \ --regex-coffee=/^[[:space:]]*([A-Za-z.]+)[[:space:]]+=[^->\n]*$/\1/v,variable/
-  \ --regex-coffee=/^[[:space:]]*@([A-Za-z.]+)[[:space:]]+=[^->\n]*$/\1/f,field/
-  \ --regex-coffee=/^[[:space:]]*@([A-Za-z.]+):[^->\n]*$/\1/f,staticField/
-  \ --regex-coffee=/^[[:space:]]*([A-Za-z.]+):[^->\n]*$/\1/f,field/
-  \ --regex-coffee=/(constructor:[[:space:]]\()@([A-Za-z.]+)/\2/f,field/
-  \ --regex-coffee=/(constructor:[[:space:]]\()@[A-Za-z.]+(,[[:space:]]@([A-Za-z.]+)){0}/\3/f,field/
-  \ --regex-coffee=/(constructor:[[:space:]]\()@[A-Za-z.]+(,[[:space:]]@([A-Za-z.]+)){1}/\3/f,field/
-  \ --regex-coffee=/(constructor:[[:space:]]\()@[A-Za-z.]+(,[[:space:]]@([A-Za-z.]+)){2}/\3/f,field/
-  \ --regex-coffee=/(constructor:[[:space:]]\()@[A-Za-z.]+(,[[:space:]]@([A-Za-z.]+)){3}/\3/f,field/
-  \ --regex-coffee=/(constructor:[[:space:]]\()@[A-Za-z.]+(,[[:space:]]@([A-Za-z.]+)){4}/\3/f,field/
-  \ --regex-coffee=/(constructor:[[:space:]]\()@[A-Za-z.]+(,[[:space:]]@([A-Za-z.]+)){5}/\3/f,field/
-  \ --regex-coffee=/(constructor:[[:space:]]\()@[A-Za-z.]+(,[[:space:]]@([A-Za-z.]+)){6}/\3/f,field/
-  \ --regex-coffee=/(constructor:[[:space:]]\()@[A-Za-z.]+(,[[:space:]]@([A-Za-z.]+)){7}/\3/f,field/
-  \ --regex-coffee=/(constructor:[[:space:]]\()@[A-Za-z.]+(,[[:space:]]@([A-Za-z.]+)){8}/\3/f,field/
-  \ --regex-coffee=/(constructor:[[:space:]]\()@[A-Za-z.]+(,[[:space:]]@([A-Za-z.]+)){9}/\3/f,field/'
-
-let $CTAGS = substitute(s:ctags_opts, '\v\([nst]\)', '\\', 'g')
-
-" Clang complete stuff
-let g:clang_auto_select=1
-let g:clang_complete_auto=0
-let g:clang_complete_copen=1
-let g:clang_hl_errors=1
-let g:clang_periodic_quickfix=0
-let g:clang_snippets=1
-let g:clang_snippets_engine="clang_complete"
-let g:clang_conceal_snippets=1
-let g:clang_exec="clang"
-let g:clang_user_options=""
-let g:clang_auto_user_options="path, .clang_complete"
-let g:clang_use_library=1
-let g:clang_library_path="/usr/local/lib"
-let g:clang_sort_algo="priority"
-let g:clang_complete_macros=1
-let g:clang_complete_patterns=0
