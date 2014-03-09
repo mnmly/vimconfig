@@ -48,6 +48,10 @@ au BufRead,BufNewFile *.ino set filetype=arduino
 "au FileType javascript nnoremap <buffer> <C-c>  :<C-u>call WriteJSDocComment()<CR>
 
 
+" http://damien.lespiau.name/blog/2009/03/18/per-project-vimrc/
+" Per project vimrc
+set exrc            " enable per-directory .vimrc files
+set secure          " disable unsafe commands in local .vimrc files
 
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menu
