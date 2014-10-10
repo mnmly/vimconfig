@@ -10,7 +10,7 @@ endif
 
 let g:colors_name = "Espresso Soda"
 
-hi Cursor  guifg=NONE guibg=#000000 gui=NONE
+hi Cursor  guifg=NONE guibg=#D0DCF1 gui=NONE
 hi Visual  guifg=NONE guibg=#c2e8ff gui=NONE
 hi CursorLine  guifg=NONE guibg=#f2f2f2 gui=NONE
 hi CursorColumn  guifg=NONE guibg=#f2f2f2 gui=NONE
