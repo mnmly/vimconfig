@@ -23,7 +23,7 @@ hi Pmenu  guifg=#61862f guibg=NONE gui=NONE
 hi PmenuSel  guifg=NONE guibg=#c2e8ff gui=NONE
 hi IncSearch  guifg=NONE guibg=#c4daed gui=NONE
 hi Search  guifg=NONE guibg=#c4daed gui=NONE
-hi Directory  guifg=NONE guibg=#e8ffd5 gui=bold
+hi Directory  guifg=NONE guibg=#e8ffd5 gui=NONE
 hi Folded  guifg=#adadad guibg=#ffffff gui=NONE
 
 hi Normal  guifg=#000000 guibg=#ffffff gui=NONE
