@@ -115,3 +115,6 @@
 [submodule "bundle/vim-instant-preview"]
 	path = bundle/vim-instant-preview
 	url = git@github.com:mnmly/vim-instant-preview.git
+[submodule "bundle/vim-multiple-cursors"]
+	path = bundle/vim-multiple-cursors
+	url = git@github.com:terryma/vim-multiple-cursors.git
