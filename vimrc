@@ -1,5 +1,4 @@
 call pathogen#infect()
-
 syntax on
 filetype plugin on
 
@@ -29,15 +28,17 @@ set softtabstop=2
 
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType python set tabstop=4|set shiftwidth=4|set softtabstop=4
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS|set softtabstop=2
+autocmd FileType javascript set softtabstop=2|set iskeyword+=-|set nolisp
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS|set iskeyword+=-|set nolisp
 autocmd FileType objc set softtabstop=4|set shiftwidth=4
 autocmd FileType cpp set softtabstop=4|set shiftwidth=4
 autocmd BufRead *.less set omnifunc=csscomplete#CompleteCSS syntax=less
 autocmd BufRead *.sass set tabstop=2|set shiftwidth=2|set softtabstop=2
-autocmd BufRead *.styl set tabstop=2|set shiftwidth=2|set softtabstop=2
+autocmd BufRead *.styl set tabstop=2|set shiftwidth=2|set softtabstop=2|set iskeyword+=-|set nolisp
 autocmd BufRead *.coffee set tabstop=2|set shiftwidth=2|set softtabstop=2|set syntax=coffee
+autocmd BufRead *.fs set syntax=glsl
+autocmd BufRead *.vs set syntax=glsl
 au BufRead,BufNewFile *.pde set filetype=arduino
 au BufRead,BufNewFile *.ino set filetype=arduino
 
@@ -77,6 +78,7 @@ nmap <space> :
 "Map escape key to jj
 imap jj <esc>
 
+
 "Map ,is to => 
 "autocmd FileType ruby iab @is =>
 inoremap <C-f> <C-x><C-o>
@@ -95,12 +97,44 @@ iab obejct object
 
 
 "-------------------------------------------------
+" Open Markdown with MacDown.app
+"-------------------------------------------------
+command! MD :silent !open -a "MacDown.app" "%:p"
+
+"-------------------------------------------------
 " Window Setting Mappings 
 "-------------------------------------------------
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" Move Lines
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+"vnoremap <C-j> :m '>+1<CR>gv=gv
+"nnoremap <C-j> :m .+1<CR>==
+"nnoremap <C-k> :m .-2<CR>==
+"vnoremap <C-k> :m '<-2<CR>gv=gv
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" Quick move in insert mode
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+inoremap <c-k> <up>
+inoremap <c-j> <down>
+inoremap <c-h> <left>
+inoremap <c-l> <right>
+"-------------------------------------------------
+" Force tabs
+"-------------------------------------------------
+
+function! ForceTabs() 
+	set autoindent
+	set noexpandtab
+	set softtabstop=4
+	set tabstop=4
+	set shiftwidth=4
+endfunction
 
 "-------------------------------------------------
 " Javascript folding settings
@@ -134,6 +168,27 @@ if exists(":Tabularize")
   nmap <Leader>a: :Tabularize /:\zs<CR>
   vmap <Leader>a: :Tabularize /:\zs<CR>
 endif
+
+"-------------------------------------------------
+" Toggle
+"-------------------------------------------------
+
+"-------------------------------------------------
+" Undo dir
+"-------------------------------------------------
+
+set undodir=~/.vim/undodir
+set undofile
+set undolevels=1000 "maximum number of changes that can be undone
+set undoreload=10000 "maximum number lines to save for undo on a buffer reload
+
+
+
+"-------------------------------------------------
+" Tern
+"-------------------------------------------------
+let tern#is_show_argument_hints_enabled='on_hold'
+"let g:stop_autocomplete=0
 
 
 "-------------------------------------------------
@@ -187,3 +242,10 @@ function! AppleConfig()
   autocmd FileType html set shiftwidth=4|set tabstop=4|set noexpandtab|set softtabstop=0
   autocmd FileType inc set shiftwidth=4|set tabstop=4|set noexpandtab|set softtabstop=0
 endfunction
+
+"
+" YCM
+"
+"
+let g:ycm_path_to_python_interpreter = "/usr/local/bin/python"
+
