@@ -5,8 +5,7 @@
 	path = bundle/js-test-driver
 	url = https://github.com/hujinpu/js-test-driver-vim-plugin.git
 [submodule "bundle/vim-coffee-script"]
-	path = bundle/vim-coffee-script
-	url = git://github.com/kchmck/vim-coffee-script.git
+	path = bundle/vim-coffee-script url = git://github.com/kchmck/vim-coffee-script.git
 [submodule "bundle/vimshell"]
 	path = bundle/vimshell
 	url = git://github.com/Shougo/vimshell.git
